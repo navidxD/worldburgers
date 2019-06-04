@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="burgersworld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp2-B1-mas">
+                                <rect key="frame" x="79" y="375" width="233" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq6-f2-43G">
+                                <rect key="frame" x="79" y="241" width="233" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIi-mS-GIg">
+                                <rect key="frame" x="90" y="539" width="222" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ES6-x2-Aru"/>
+                                </constraints>
+                                <state key="normal" title="Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="changeTextLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x73-k8-bmj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hq6-f2-43G" secondAttribute="trailing" constant="102" id="3bY-uP-jJw"/>
+                            <constraint firstItem="Hq6-f2-43G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="4lY-3L-V22"/>
+                            <constraint firstItem="zIi-mS-GIg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="8Zu-RJ-NSh"/>
+                            <constraint firstItem="Hq6-f2-43G" firstAttribute="trailing" secondItem="Yp2-B1-mas" secondAttribute="trailing" id="G1u-94-Aox"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zIi-mS-GIg" secondAttribute="bottom" constant="261" id="G2Y-JM-ZgX"/>
+                            <constraint firstItem="Yp2-B1-mas" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="375" id="aF9-0A-dua"/>
+                            <constraint firstItem="Hq6-f2-43G" firstAttribute="trailing" secondItem="zIi-mS-GIg" secondAttribute="trailing" id="iew-h7-gTd"/>
+                            <constraint firstItem="Hq6-f2-43G" firstAttribute="leading" secondItem="Yp2-B1-mas" secondAttribute="leading" id="laf-eO-MAm"/>
+                            <constraint firstItem="Hq6-f2-43G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="yKG-kL-oF0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="BurgerOutlet" destination="Yp2-B1-mas" id="TAe-Mw-yzC"/>
+                        <outlet property="PaisesOulet" destination="Hq6-f2-43G" id="sEH-xg-HJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
